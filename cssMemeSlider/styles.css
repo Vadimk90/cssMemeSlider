@@ -55,12 +55,28 @@ body {
     opacity: 0;  
 }
 
+
+.img-text {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.250rem;
+	margin: 15px;
+	color: #bbb;
+}
+
+.img-text .text {
+	display: none;
+}
+.img-text .text.active {
+    display: block; 
+}
+
+
 .controls {
 	position: absolute;
 	bottom: 30px;
 	z-index: 3;
 	left: 85%;
-	transform: translat8eX(-50%);
+	transform: translateX(-50%);
 }
 
 .controls .dot {
