@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS slider</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slides">
+          <img src="./IMG/it-юмор-geek-лестница-css-8282044.jpeg" alt="лестница" class="active">
+          <img src="./IMG/it-юмор-geek-css-вёрстка-7468586.jpeg" alt="знак">
+          <img src="./IMG/флаг-css-geek-7026539.jpeg" alt="флаг">
+          <img src="./IMG/1651837878118526807.jpg" alt="код">
+        </div>
+
+        <div class="img-text">
+          <p class="text active">Просто об устройстве фронтенда</p>
+          <p class="text">Когда не разобрался с CSS</p>
+          <p class="text">align-items: center;</p>
+          <p class="text">Я: *сдвигаю div на один пиксель*</p>
+        </div>
+
+        <div class="controls">
+          <div class="dot active" onclick="currentSlide(0)"></div>
+          <div class="dot"  onclick="currentSlide(1)"></div>
+          <div class="dot"  onclick="currentSlide(2)"></div>
+          <div class="dot"  onclick="currentSlide(3)"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
