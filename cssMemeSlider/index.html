@@ -4,41 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS slider</title>
+    <link href="/cssMemeSlider/styles.css" rel="stylesheet" />
 </head>
 <body>
     <div class="slider-container">
         <div class="slides">
-            <div class="slide active">
-              <img src="/cssMemeSlider/IMG/2151002612.jpg" alt="девочка в куртке">
-            </div>
-            <div class="slide">
+              <img src="/cssMemeSlider/IMG/2151002612.jpg" alt="девочка в куртке" class="active">
               <img src="/cssMemeSlider/IMG/2151035176.jpg" alt="девочка на закате">
-            </div>
-            <div class="slide">
               <img src="/cssMemeSlider/IMG/2151067391.jpg" alt="парень в лесу">
-            </div>
-            <div class="slide">
               <img src="./IMG/anime-style-chinese-new-year-celebration-scene.jpg" alt="девочка радуется">
-            </div>
         </div>
 
-        <div class="footer">
-          <div class="img-text">
-            <p class="text">Что нибудь смешное для картинки девочки в куртке</p>
+
+          <!-- <div class="img-text">
+            <p class="text active">Что нибудь смешное для картинки девочки в куртке</p>
             <p class="text">Что нибудь смешное для картинки девочки на закате</p>
             <p class="text">что нибудь смешное для картинки парня в лесу</p>
             <p class="caption">что нибудь смешное для картинки парня в лесу</p>
-          </div>
+          </div> -->
 
           <div class="controls">
-            <span class="dot active" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-            <span class="dot" data-slide="3"></span>
-            <span class="dot" data-slide="4"></span>
+            <div class="dot active" onclick="currentSlide(1)"></div>
+            <div class="dot"  onclick="currentSlide(2)"></div>
+            <div class="dot"  onclick="currentSlide(3)"></div>
+            <div class="dot"  onclick="currentSlide(4)"></div>
           </div>
-        </div>
 
-          
+
     </div>
     <script src="/cssMemeSlider/script.js"></script>
 </body>
