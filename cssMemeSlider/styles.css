@@ -27,55 +27,13 @@ html {
     box-sizing: border-box;
 }
 
-.slider {
-	position: relative;
-	width: 100%;
-	max-width: 600px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-  
-.slides {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-	width: 400%;
-}
-  
-.slide {
-	width: 100%;
-	min-width: 100%;
+.slider-container {
+	max-width: 1280px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
-  
-.slide img {
-	width: 100%;
-	height: auto;
-}
-  
-.caption {
-	text-align: center;
-	font-size: 18px;
-	padding: 10px 0;
-}
-  
-.controls {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	display: flex;
-	gap: 10px;
-}
-  
-.dot {
-	width: 12px;
-	height: 12px;
-	background-color: gray;
-	border-radius: 50%;
-	cursor: pointer;
-}
-  
-.dot.active {
-	background-color: black;
+
+.footer {
+	
 }
