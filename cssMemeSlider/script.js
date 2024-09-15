@@ -9,7 +9,7 @@ function currentSlide(index) {
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.remove('active');
-    slide.style.left = '-100%';  // скрываем слайды
+    slide.style.left = '-100%'; 
   });
 
   dots.forEach(dot => {
@@ -17,7 +17,7 @@ function showSlide(index) {
   });
 
   slides[index].classList.add('active');
-  slides[index].style.left = '0';  // показываем текущий слайд
+  slides[index].style.left = '0'; 
   dots[index].classList.add('active');
 }
 
@@ -25,5 +25,5 @@ dots.forEach((dot, index) => {
   dot.addEventListener('click', () => currentSlide(index));
 });
 
-// Инициализация слайдера
+
 showSlide(currentIndex);

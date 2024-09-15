@@ -39,11 +39,20 @@ body {
 	position: absolute;
 	object-fit: cover;
 	border-radius: 20px;
+	transition: transform 0.5s ease, opacity 0.5s ease; 
+	opacity: 0; 
+}
+
+.slider-container .slides img.active {
+    transform: translateX(0); 
+    opacity: 1; 
 }
 
 .slider-container .slides img:not(.active) {
 	top: 0;
 	left: -100%;
+	transform: translateX(100%);  
+    opacity: 0;  
 }
 
 .controls {
